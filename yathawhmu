@@ -1,0 +1,34 @@
+import sys
+from time import sleep
+import time 
+
+def print_ paragraph():
+lines = [
+  ("Hello FREDDY!!!",0.07),
+  ("i don't know how can i suppose to tell you all about how i'm feel when i'm with you dwaggg. wait lemme type in myanglish!!!
+uhh sa'' koko nk skr pyw fik khk dr ka bby talk so p tinn lyk tok koko ka yess hti htr dr nk bby ka lrr hii lyk dr ek tone ka koko ka nya mha lr pyw ml nw so 
+p pyw khk dr(bro that's not cool bro) ek tone ka pyw ll ya dr ko, anyway nya kya koko lrr pyw tok ek nya ka sa p koko nk bl pyw nyy khk dr tk chr kg twy ko 
+ll bby rp pyn poh pr mae twr dl ngl'' nuk p koko nk skr a myr g pyw fik lrr dl i think we were in friend situation for 1 week lr idk nuk p koko nk skr amyl pyw fik p game
+ll tuu'' sok fik dl and koko ka a yin sa p confess lok khk dr and i accepted(eheheeee) twl khk tk a chain ka ny akhu hti a nrr mr shi pyy dr kw bby soe tha mya
+thee khn pyy khk dr kw twk myr g chik dl. bby skr nrr htg pyy dr yw bby sx soe tg koko ka ma nyo nyin bl chork pyy khk dr twy bby br pyw'' koko ka amyl lyk lok pyy dr
+game sok ml so ll tnn sok pyy dl, bro never says "NO" to me( koko spoils me too much) ek dr kyounk ll bby ka khu lo twy soe ny dr 
+dr pyy mk ll chik pr dl sx soe dr ynn fik dr toh ek lo ma hok tk skr twy pyw mii dr ka sx htl ka ma prr'' buu relationship tai ka d lo pl lyy nw
+bby toh twl tone ka pyw khk tha lo bl fix tgh bro. we fight we fix we stay a myr g chik ya dr moh htr ll ma twr buu pyk ml ll ma pyw buu sone shone ll ma khn ng buu
+bl luk way'' bby koko nk bl nyy mr a di ka ka bby nk koko 1 yuk nk 1 yuk yone'' kyii'' nk chik ny poh bl lo dl, kokoh bk mr kokoh nrr mr bl thu mha ma shi tg
+bby yl koko's parents yl kokoh nyima lyy yl shi dl nw. bby ka koko nk bl tuu'' shi tok mr ma loh sx cha pr bby ynn fik chain sx soe sx toe p pyw mi dr bl shi dr
+bby kokoh ko tk kel ll ma lok buu lok ll ma lok yk buu lok poh ll sx kuu ma shi buu. in future mr ll bby ka koko nk bl shi mr htwk twr poh ll a sii sin ma shi buu
+koko nk bl yuu mr and let's tell our kids we've been together since we were teenagers. nuk sone pyw chin dr ka tok bby ko yone pr bby ka kokoh a pai ma loh
+nuk luu ll ma shi tha lo koko nk tinn ko enough fik pr p nw. kokoh ko ll yone dl akhu lo myo bl koko ll thee khn bby ll amyl sx ma soe tok buu  d lo lyy nk bl
+2 yuk thr tuu'' ny kya ya ag nw. myr g chik dl pyw pya ma tk ag chik dl i love you more than you know koko. bby a nrr mr ma shi khin koko koh hrr ko kayu sike pr nw
+nyy kg ag nyy srr ll thy chr lok twae khr kya yin arbwrr myr g pyy ml. d luk bl lk nyaung dl ma yy ng tok buu kmkl chik dl mwhhh. ,0.07),
+ ]
+ delays = [0.08, 0.1, 1.5, 0.1, 1.11, 1, 1.3, 1]
+
+    for i, (line, char_delay) in enumerate(lines):
+        for char in line:
+            print(char, end='')
+            sys.stdout.flush()
+            sleep(char_delay)
+        time.sleep(delays[i])
+        print('')
+print_paragraph()
